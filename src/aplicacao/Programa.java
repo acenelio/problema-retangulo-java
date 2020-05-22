@@ -26,9 +26,9 @@ public class Programa {
 			altura = sc.nextDouble();
 		}		
 		
-		int opcao = 0;
+		int opcao;
 		
-		while (opcao != 3) {
+		do {
 
 			System.out.println();
 			System.out.println("MENU:");
@@ -53,7 +53,7 @@ public class Programa {
 			else {
 				System.out.printf("%nOPÇÃO INVALIDA%n");
 			}
-		}
+		} while (opcao != 3);
 		
 		sc.close();
 	}
